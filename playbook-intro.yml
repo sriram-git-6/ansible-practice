@@ -1,0 +1,33 @@
+# list of persons
+- name: sriram
+  DOB: 6-08-1988
+  # This is map
+  address:
+    D-No: 23
+    streetname: gandhinagar
+    city: vijayawada
+    country: india
+  # This is list  
+  addresses:
+    - D-No: 25
+      city: mumbai
+      country: India
+    - D-No: 30
+      city: sydney
+      country: Australia   
+- name: hari
+  DOB: 4-05-1998
+  # This is map
+  address:
+    D-No: 23
+    streetname: gandhinagar
+    city: vijayawada
+    country: india
+  # This is list  
+  addresses:
+    - D-No: 34
+      city: mumbai
+      country: India
+    - D-No: 78
+      city: sydney
+      country: Australia          
