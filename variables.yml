@@ -1,6 +1,13 @@
 - name: variables in ansible
   hosts: node
+  vars:
+   course: devops
+   trainer: sriram
+   duration: 110hrs
   tasks:
-    - name: print the variable
+    - name: print the message
       ansible.builtin.debug:
-        msg: "Iam learning ansible"
+        msg: Iam learning ansible
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: Iam learning {{course}} course and trainer is {{trainer}} and duration is {{duration}}     
