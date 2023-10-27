@@ -1,6 +1,7 @@
 # install and run nginx
  - name: install nginx and start service
    hosts: node
+   become: yes
    tasks:
      - name: install nginx 
        ansible.builtin.yum:

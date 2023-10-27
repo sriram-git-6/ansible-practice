@@ -1,0 +1,6 @@
+- name: variables in ansible
+  hosts: node
+  tasks:
+    - name: print the variable
+      ansible.builtin.debug:
+        msg: "Iam learning ansible"
