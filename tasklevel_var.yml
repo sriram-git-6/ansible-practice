@@ -1,0 +1,16 @@
+- name: varaibles at task level
+  hosts: localhost
+  # variables defined in play level
+  vars:
+    money: "10000rs"
+    land: "100 hectors"
+  tasks: 
+    - name: using the variables defined in play
+      ansible.builtin.debug:
+        msg: "we have {{money}} and {{land}} land"
+    - name: using the variables defined in this task
+      vars:
+        money: "20000rs"
+        land: "200 hectors" 
+      ansible.builtin.debug:
+        msg: "we have {{money}} and {{land}} land"       
