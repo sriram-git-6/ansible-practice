@@ -2,5 +2,6 @@
   hosts: node
   tasks:
     - name: print username from inventory
-      msg: username is {{USER_NAME}}
+      ansible.builtin.debug:
+       msg: username is {{USER_NAME}}
       
