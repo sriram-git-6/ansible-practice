@@ -1,0 +1,6 @@
+- name: calling variables from inventory
+  hosts: node
+  tasks:
+    - name: print username from inventory
+      msg: username is {{USER_NAME}}
+      

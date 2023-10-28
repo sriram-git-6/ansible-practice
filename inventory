@@ -1,2 +1,5 @@
 [node]
 node-1.devops746.online
+
+[node:vars]
+USER_NAME=nodeadmin
